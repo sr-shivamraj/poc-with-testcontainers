@@ -44,12 +44,13 @@ public class PersonControllerTest extends AbstractIntegrationTest {
                 post("/person")
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
                         .content(person.toString()))
-                .andExpect(status().isOk());
+                .andExpect(status().isOk()).andExpect(content().string("ok"));
 
         this.mockMvc.perform(
                 get("/person")
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
-        ).andExpect(status().isOk());
+            ).andExpect(status().isOk());
+
     }
 
 }
