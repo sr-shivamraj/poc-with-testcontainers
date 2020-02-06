@@ -9,7 +9,7 @@ We'll be creating a POC with Java TestContainers library. It allows us to use Do
 ## How to use
 
 Prerequisites
-    Docker for Windows needs to be installed. For more details please see System Requirements.
+    Docker for Windows needs to be installed. For more details please see https://www.testcontainers.org/supported_docker_environment/.
 
 1. The first step is to add a dependency to the project. For this example, we’ll use org.testcontainers.postgressql dependency, which is specialized for supporting our Postgres docker container.
 
