@@ -9,6 +9,8 @@ import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.testcontainers.containers.FixedHostPortGenericContainer;
+import org.testcontainers.containers.KafkaContainer;
 import org.testcontainers.containers.PostgreSQLContainer;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -21,10 +23,21 @@ public abstract class AbstractIntegrationTest {
 
 
     @ClassRule
-    public static PostgreSQLContainer postgres = new PostgreSQLContainer()
+    public static PostgreSQLContainer postgres = (PostgreSQLContainer)new PostgreSQLContainer()
             .withDatabaseName(TEST_DATABASE_NAME)
             .withUsername(TEST_USER)
-            .withPassword(TEST_PASSWORD);
+            .withPassword(TEST_PASSWORD).withExposedPorts(2424, 2480);
+//    @ClassRule
+//    public KafkaContainer kafka = new KafkaContainer();
+//    kafka.
+
+//    public static FixedHostPortGenericContainer postgreSQLContainer =
+//            new FixedHostPortGenericContainer<>("postgres:latest")
+//                    .withEnv("POSTGRES_USER","testUser")
+//                    .withEnv("POSTGRES_PASSWORD","testPassword")
+//                    .withEnv("POSTGRES_DB","testDb")
+//                    .withFixedExposedPort(60015);
+
 
     public static class Initializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
         private static final String TEST_DATASOURCE = postgres.getJdbcUrl();
