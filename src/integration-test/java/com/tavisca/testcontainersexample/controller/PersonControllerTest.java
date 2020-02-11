@@ -51,7 +51,7 @@ public class PersonControllerTest extends AbstractIntegrationTest {
 
         this.mockMvc.perform(
                 get("/person")
-                        .contentType(MediaType.APPLICATION_JSON_UTF8)
+                        .contentType(MediaType.APPLICATION_JSON)
             ).andExpect(status().isOk());
 
     }
