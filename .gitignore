@@ -1,6 +1,6 @@
 .gradle
 !gradle/wrapper/gradle-wrapper.jar
-
+build
 ### IntelliJ IDEA ###
 .idea
 *.iws

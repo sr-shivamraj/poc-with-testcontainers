@@ -1,0 +1,4 @@
+CREATE TABLE person(
+    id VARCHAR(200) PRIMARY KEY,
+    name VARCHAR(200) NULL
+);
