@@ -1,39 +1,65 @@
-buildscript {
-	ext {
-		springBootVersion = '2.1.0.RELEASE'
-	}
-	repositories {
-		mavenCentral()
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-	}
+plugins {
+	id 'org.springframework.boot' version '2.2.4.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
 }
 
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
+sourceSets {
+	integrationTest {
+		java {
+			compileClasspath += main.output + test.output
+			runtimeClasspath += main.output + test.output
+			srcDir file('src/integration-test/java')
+		}
+		resources.srcDir file('src/integration-test/resources')
+	}
+}
+configurations {
+	integrationTestCompile.extendsFrom testCompile
+	integrationTestRuntime.extendsFrom testRuntime
+}
+task integrationTest(type: Test) {
+	testClassesDirs = sourceSets.integrationTest.output.classesDirs
+	classpath = sourceSets.integrationTest.runtimeClasspath
+	outputs.upToDateWhen { false }
+	useJUnitPlatform()
+	testLogging.showStandardStreams=true
+}
+
+check.dependsOn integrationTest
+integrationTest.mustRunAfter test
 
 group = 'com.tavisca'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
+sourceCompatibility = '11'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
 
 repositories {
 	mavenCentral()
 }
 
-
 dependencies {
-    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
-	implementation('org.springframework.boot:spring-boot-starter-web')
-	implementation('org.liquibase:liquibase-core')
-    runtime('org.postgresql:postgresql')
-    testImplementation('org.springframework.boot:spring-boot-starter-test')
-    testCompile 'org.testcontainers:postgresql:1.10.1'
-	testCompile 'org.testcontainers:kafka:1.12.5'
-	compile('org.hibernate:hibernate-core:5.4.2.Final')
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtime 'org.postgresql:postgresql'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	integrationTestImplementation 'org.springframework.boot:spring-boot-starter-test'
+	integrationTestImplementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	integrationTestImplementation 'org.springframework.boot:spring-boot-starter-web'
+	integrationTestRuntime 'org.postgresql:postgresql'
+	integrationTestImplementation 'org.liquibase:liquibase-core'
+	integrationTestCompile 'org.testcontainers:postgresql:1.10.1'
+	integrationTestCompile 'org.hibernate:hibernate-core:5.4.2.Final'
+
+
 }
+
 test {
-	testLogging.showStandardStreams = true
+	useJUnitPlatform()
+	testLogging.showStandardStreams=true
 }

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PersonControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PersonControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.tavisca.testcontainersexample.controller.html">com.tavisca.testcontainersexample.controller</a> &gt; PersonControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.164s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testSpringBootContext</td>
+<td class="success">2.164s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>12:26:57.819 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.tavisca.testcontainersexample.controller.PersonControllerTest]
+12:26:57.819 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.tavisca.testcontainersexample.controller.PersonControllerTest]
+12:26:57.822 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.tavisca.testcontainersexample.controller.PersonControllerTest]
+12:26:57.823 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.tavisca.testcontainersexample.controller.PersonControllerTest]
+12:26:57.883 [Test worker] DEBUG org.testcontainers.utility.TestcontainersConfiguration - Testcontainers configuration overrides will be loaded from file:/C:/Users/sraj/.testcontainers.properties
+12:26:57.895 [Test worker] DEBUG org.testcontainers.utility.TestcontainersConfiguration - Testcontainers configuration overrides loaded from TestcontainersConfiguration(properties={docker.client.strategy=org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy})
+12:26:57.949 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+12:26:58.085 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy - Will use 'okhttp' transport
+12:26:58.599 [ducttape-0] DEBUG org.testcontainers.dockerclient.DockerClientProviderStrategy - Pinging docker daemon...
+12:26:58.987 [ducttape-0] DEBUG com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: org.testcontainers.dockerclient.transport.okhttp.OkHttpDockerCmdExecFactory$1@46a9ba16
+12:26:59.151 [Test worker] INFO org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy - Accessing docker with local Npipe socket (npipe:////./pipe/docker_engine)
+12:26:59.151 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+12:26:59.156 [Test worker] INFO org.testcontainers.DockerClientFactory - Docker host IP address is localhost
+12:26:59.164 [Test worker] DEBUG com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: com.github.dockerjava.core.exec.InfoCmdExec@246e3eb1
+12:26:59.533 [Test worker] DEBUG com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: com.github.dockerjava.core.exec.VersionCmdExec@41456f59
+12:26:59.561 [Test worker] INFO org.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 19.03.5
+  API Version: 1.40
+  Operating System: Docker Desktop
+  Total Memory: 1980 MB
+12:26:59.570 [Test worker] DEBUG com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: ListImagesCmdImpl[imageNameFilter=quay.io/testcontainers/ryuk:0.2.2,showAll=false,filters=com.github.dockerjava.core.util.FiltersBuilder@0,execution=com.github.dockerjava.core.exec.ListImagesCmdExec@18e70bb6]
+12:26:59.669 [Test worker] DEBUG org.testcontainers.utility.RegistryAuthLocator - Looking up auth config for image: quay.io/testcontainers/ryuk:0.2.2
+12:26:59.669 [Test worker] DEBUG org.testcontainers.utility.RegistryAuthLocator - RegistryAuthLocator has configFile: C:\Users\sraj\.docker\config.json (exists) and commandPathPrefix: 
+12:26:59.681 [Test worker] DEBUG org.testcontainers.utility.RegistryAuthLocator - registryName [quay.io] for dockerImageName [quay.io/testcontainers/ryuk:0.2.2]
+12:26:59.684 [Test worker] DEBUG org.testcontainers.utility.RegistryAuthLocator - Executing docker credential provider: docker-credential-desktop to locate auth config for: quay.io
+12:26:59.715 [Test worker] DEBUG org.testcontainers.shaded.org.zeroturnaround.exec.ProcessExecutor - Executing [docker-credential-desktop, get].
+12:26:59.822 [Test worker] DEBUG org.testcontainers.shaded.org.zeroturnaround.exec.ProcessExecutor - Started Process[pid=4120, exitValue=&quot;not exited&quot;]
+12:27:00.309 [WaitForProcess-Process[pid=4120, exitValue=&quot;not exited&quot;]] DEBUG org.testcontainers.shaded.org.zeroturnaround.exec.WaitForProcess - Process[pid=4120, exitValue=1] stopped with exit code 1
+12:27:00.316 [Test worker] DEBUG org.testcontainers.shaded.org.zeroturnaround.exec.ProcessExecutor - Executing [docker-credential-desktop, get].
+12:27:00.409 [Test worker] DEBUG org.testcontainers.shaded.org.zeroturnaround.exec.ProcessExecutor - Started Process[pid=13808, exitValue=&quot;not exited&quot;]
+12:27:00.904 [WaitForProcess-Process[pid=13808, exitValue=&quot;not exited&quot;]] DEBUG org.testcontainers.shaded.org.zeroturnaround.exec.WaitForProcess - Process[pid=13808, exitValue=1] stopped with exit code 1
+12:27:00.906 [Test worker] DEBUG org.testcontainers.utility.RegistryAuthLocator - Got credentials not found error message from docker credential helper - credentials not found in native keychain
+12:27:00.907 [Test worker] INFO org.testcontainers.utility.RegistryAuthLocator - Credentials not found for host (quay.io) when using credential helper/store (docker-credential-desktop)
+12:27:00.908 [Test worker] DEBUG org.testcontainers.utility.RegistryAuthLocator - no matching Auth Configs - falling back to defaultAuthConfig [null]
+12:27:00.909 [Test worker] DEBUG org.testcontainers.dockerclient.auth.AuthDelegatingDockerClientConfig - Effective auth config [null]
+12:27:00.947 [Test worker] DEBUG com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: com.github.dockerjava.core.command.CreateContainerCmdImpl@204f989b[name=testcontainers-ryuk-ac11c25f-831d-4f78-8300-70c1a100090b,hostName=&lt;null&gt;,domainName=&lt;null&gt;,user=&lt;null&gt;,attachStdin=&lt;null&gt;,attachStdout=&lt;null&gt;,attachStderr=&lt;null&gt;,portSpecs=&lt;null&gt;,tty=&lt;null&gt;,stdinOpen=&lt;null&gt;,stdInOnce=&lt;null&gt;,env=&lt;null&gt;,cmd=&lt;null&gt;,entrypoint=&lt;null&gt;,image=quay.io/testcontainers/ryuk:0.2.2,volumes=com.github.dockerjava.api.model.Volumes@1983b2b0,workingDir=&lt;null&gt;,macAddress=&lt;null&gt;,networkDisabled=&lt;null&gt;,exposedPorts=com.github.dockerjava.api.model.ExposedPorts@1df52ba8,stopSignal=&lt;null&gt;,hostConfig=com.github.dockerjava.api.model.HostConfig@7bef0fb0[binds=com.github.dockerjava.api.model.Binds@2b9990b5,blkioWeight=&lt;null&gt;,blkioWeightDevice=&lt;null&gt;,blkioDeviceReadBps=&lt;null&gt;,blkioDeviceReadIOps=&lt;null&gt;,blkioDeviceWriteBps=&lt;null&gt;,blkioDeviceWriteIOps=&lt;null&gt;,memorySwappiness=&lt;null&gt;,capAdd=&lt;null&gt;,capDrop=&lt;null&gt;,containerIDFile=&lt;null&gt;,cpuPeriod=&lt;null&gt;,cpuShares=&lt;null&gt;,cpuQuota=&lt;null&gt;,cpusetCpus=&lt;null&gt;,cpusetMems=&lt;null&gt;,devices=&lt;null&gt;,diskQuota=&lt;null&gt;,dns=&lt;null&gt;,dnsSearch=&lt;null&gt;,extraHosts=&lt;null&gt;,links=&lt;null&gt;,logConfig=&lt;null&gt;,lxcConf=&lt;null&gt;,memory=&lt;null&gt;,memorySwap=&lt;null&gt;,memoryReservation=&lt;null&gt;,kernelMemory=&lt;null&gt;,networkMode=&lt;null&gt;,oomKillDisable=&lt;null&gt;,autoRemove=true,oomScoreAdj=&lt;null&gt;,portBindings=&lt;null&gt;,privileged=false,publishAllPorts=true,readonlyRootfs=&lt;null&gt;,restartPolicy=&lt;null&gt;,ulimits=&lt;null&gt;,volumesFrom=&lt;null&gt;,pidMode=&lt;null&gt;,securityOpts=&lt;null&gt;,cgroupParent=&lt;null&gt;,volumeDriver=&lt;null&gt;,shmSize=&lt;null&gt;,pidsLimit=&lt;null&gt;,runtime=&lt;null&gt;,tmpFs=&lt;null&gt;],labels={org.testcontainers=true},networkingConfig=&lt;null&gt;,ipv4Address=&lt;null&gt;,ipv6Address=&lt;null&gt;,aliases=&lt;null&gt;,authConfig=&lt;null&gt;,execution=com.github.dockerjava.core.exec.CreateContainerCmdExec@280888f9]
+12:27:01.377 [Test worker] DEBUG com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: 657ac35d01d6338a135c8ca0a245b05ce38b7bdf0893ac2a5ef776a026467fc1,com.github.dockerjava.core.exec.StartContainerCmdExec@7afaaf62
+12:27:03.314 [Test worker] DEBUG com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: 657ac35d01d6338a135c8ca0a245b05ce38b7bdf0893ac2a5ef776a026467fc1,false,com.github.dockerjava.core.exec.InspectContainerCmdExec@6de9a07a
+12:27:03.315 [Test worker] DEBUG com.github.dockerjava.core.exec.InspectContainerCmdExec - GET: OkHttpWebTarget(okHttpClient=org.testcontainers.shaded.okhttp3.OkHttpClient@60efd295, baseUrl=http://docker.socket/, path=[/containers/657ac35d01d6338a135c8ca0a245b05ce38b7bdf0893ac2a5ef776a026467fc1/json], queryParams={})
+12:27:03.557 [testcontainers-ryuk] DEBUG org.testcontainers.utility.ResourceReaper - Sending 'label=org.testcontainers%3Dtrue&amp;label=org.testcontainers.sessionId%3Dac11c25f-831d-4f78-8300-70c1a100090b' to Ryuk
+12:27:03.560 [testcontainers-ryuk] DEBUG org.testcontainers.utility.ResourceReaper - Received 'ACK' from Ryuk
+12:27:03.560 [Test worker] INFO org.testcontainers.DockerClientFactory - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+        ?? Checking the system...
+        ? Docker version should be at least 1.6.0
+12:27:03.593 [Test worker] DEBUG com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: 657ac35d01d6338a135c8ca0a245b05ce38b7bdf0893ac2a5ef776a026467fc1,&lt;null&gt;,true,&lt;null&gt;,&lt;null&gt;,&lt;null&gt;,&lt;null&gt;,{df,-P},com.github.dockerjava.core.exec.ExecCreateCmdExec@90dca61
+12:27:03.861 [tc-okhttp-stream-421007790] DEBUG com.github.dockerjava.core.command.ExecStartResultCallback - STDOUT: Filesystem           1024-blocks    Used Available Capacity Mounted on
+overlay               61255652   6430696  51683624  11% /
+tmpfs                    65536         0     65536   0% /dev
+tmpfs                  1013980         0   1013980   0% /sys/fs/cgroup
+shm                      65536         0     65536   0% /dev/shm
+/dev/sda1             61255652   6430696  51683624  11% /etc/resolv.conf
+/dev/sda1             61255652   6430696  51683624  11% /etc/hostname
+/dev/sda1             61255652   6430696  51683624  11% /etc/hosts
+tmpfs                   202796       860    201936   0% /run/docker.sock
+tmpfs                  1013980         0   1013980   0% /proc/acpi
+tmpfs                    65536         0     65536   0% /proc/kcore
+tmpfs                    65536         0     65536   0% /proc/keys
+tmpfs                    65536         0     65536   0% /proc/timer_list
+tmpfs                    65536         0     65536   0% /proc/sched_debug
+tmpfs                  1013980         0   1013980   0% /sys/firmware
+        ? Docker environment should have more than 2GB free disk space
+12:27:03.940 [Test worker] DEBUG com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: ListImagesCmdImpl[imageNameFilter=&lt;null&gt;,showAll=false,filters=com.github.dockerjava.core.util.FiltersBuilder@0,execution=com.github.dockerjava.core.exec.ListImagesCmdExec@5ca48377]
+12:27:04.010 [Test worker] DEBUG docker[postgres:9.6.8] - 
++ Profiler [Rule creation - prefetch image]
+|---+ Profiler [Obtaining client]
+    |-- Subtotal           [Obtaining client]     0.057 milliseconds.
+|-- elapsed time       [Obtaining client]     0.057 milliseconds.
+|-- elapsed time     [Check local images]    48.649 milliseconds.
+|-- Total        [Rule creation - prefetch image]    51.118 milliseconds.
+
+12:27:04.028 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.tavisca.testcontainersexample.controller.PersonControllerTest]
+12:27:04.030 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.tavisca.testcontainersexample.controller.PersonControllerTest]
+12:27:04.034 [Test worker] DEBUG docker[postgres:9.6.8] - Starting container: postgres:9.6.8
+12:27:04.034 [Test worker] DEBUG docker[postgres:9.6.8] - Trying to start container: postgres:9.6.8
+12:27:04.037 [Test worker] DEBUG docker[postgres:9.6.8] - Trying to start container: postgres:9.6.8 (attempt 1/1)
+12:27:04.038 [Test worker] DEBUG docker[postgres:9.6.8] - Starting container: postgres:9.6.8
+12:27:04.038 [Test worker] INFO docker[postgres:9.6.8] - Creating container for image: postgres:9.6.8
+12:27:04.039 [Test worker] DEBUG org.testcontainers.utility.RegistryAuthLocator - Looking up auth config for image: postgres:9.6.8
+12:27:04.040 [Test worker] DEBUG org.testcontainers.utility.RegistryAuthLocator - RegistryAuthLocator has configFile: C:\Users\sraj\.docker\config.json (exists) and commandPathPrefix: 
+12:27:04.042 [Test worker] DEBUG org.testcontainers.utility.RegistryAuthLocator - registryName [index.docker.io] for dockerImageName [postgres:9.6.8]
+12:27:04.042 [Test worker] DEBUG org.testcontainers.utility.RegistryAuthLocator - Executing docker credential provider: docker-credential-desktop to locate auth config for: index.docker.io
+12:27:04.043 [Test worker] DEBUG org.testcontainers.shaded.org.zeroturnaround.exec.ProcessExecutor - Executing [docker-credential-desktop, get].
+12:27:04.141 [Test worker] DEBUG org.testcontainers.shaded.org.zeroturnaround.exec.ProcessExecutor - Started Process[pid=17068, exitValue=&quot;not exited&quot;]
+12:27:04.612 [WaitForProcess-Process[pid=17068, exitValue=&quot;not exited&quot;]] DEBUG org.testcontainers.shaded.org.zeroturnaround.exec.WaitForProcess - Process[pid=17068, exitValue=0] stopped with exit code 0
+12:27:04.615 [Test worker] DEBUG org.testcontainers.utility.RegistryAuthLocator - Credential helper/store provided auth config for: index.docker.io
+12:27:04.621 [Test worker] DEBUG org.testcontainers.utility.RegistryAuthLocator - found creds store auth config [AuthConfig{username=srshivamraj, password=hidden non-blank value, auth=blank, email=null, registryAddress=index.docker.io, registryToken=blank}]
+12:27:04.622 [Test worker] DEBUG org.testcontainers.dockerclient.auth.AuthDelegatingDockerClientConfig - Effective auth config [AuthConfig{username=srshivamraj, password=hidden non-blank value, auth=blank, email=null, registryAddress=index.docker.io, registryToken=blank}]
+12:27:04.636 [Test worker] DEBUG com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: com.github.dockerjava.core.command.CreateContainerCmdImpl@4d3d788f[name=&lt;null&gt;,hostName=&lt;null&gt;,domainName=&lt;null&gt;,user=&lt;null&gt;,attachStdin=&lt;null&gt;,attachStdout=&lt;null&gt;,attachStderr=&lt;null&gt;,portSpecs=&lt;null&gt;,tty=&lt;null&gt;,stdinOpen=&lt;null&gt;,stdInOnce=&lt;null&gt;,env={POSTGRES_USER=root,POSTGRES_PASSWORD=root,POSTGRES_DB=test-db},cmd={postgres},entrypoint=&lt;null&gt;,image=postgres:9.6.8,volumes=com.github.dockerjava.api.model.Volumes@5bcaadd6,workingDir=&lt;null&gt;,macAddress=&lt;null&gt;,networkDisabled=&lt;null&gt;,exposedPorts=com.github.dockerjava.api.model.ExposedPorts@4e1f6b38,stopSignal=&lt;null&gt;,hostConfig=com.github.dockerjava.api.model.HostConfig@620ad6ed[binds=com.github.dockerjava.api.model.Binds@44552323,blkioWeight=&lt;null&gt;,blkioWeightDevice=&lt;null&gt;,blkioDeviceReadBps=&lt;null&gt;,blkioDeviceReadIOps=&lt;null&gt;,blkioDeviceWriteBps=&lt;null&gt;,blkioDeviceWriteIOps=&lt;null&gt;,memorySwappiness=&lt;null&gt;,capAdd=&lt;null&gt;,capDrop=&lt;null&gt;,containerIDFile=&lt;null&gt;,cpuPeriod=&lt;null&gt;,cpuShares=&lt;null&gt;,cpuQuota=&lt;null&gt;,cpusetCpus=&lt;null&gt;,cpusetMems=&lt;null&gt;,devices=&lt;null&gt;,diskQuota=&lt;null&gt;,dns=&lt;null&gt;,dnsSearch=&lt;null&gt;,extraHosts={},links=com.github.dockerjava.api.model.Links@4a7f8262,logConfig=&lt;null&gt;,lxcConf=&lt;null&gt;,memory=&lt;null&gt;,memorySwap=&lt;null&gt;,memoryReservation=&lt;null&gt;,kernelMemory=&lt;null&gt;,networkMode=&lt;null&gt;,oomKillDisable=&lt;null&gt;,autoRemove=&lt;null&gt;,oomScoreAdj=&lt;null&gt;,portBindings={},privileged=&lt;null&gt;,publishAllPorts=true,readonlyRootfs=&lt;null&gt;,restartPolicy=&lt;null&gt;,ulimits=&lt;null&gt;,volumesFrom={},pidMode=&lt;null&gt;,securityOpts=&lt;null&gt;,cgroupParent=&lt;null&gt;,volumeDriver=&lt;null&gt;,shmSize=&lt;null&gt;,pidsLimit=&lt;null&gt;,runtime=&lt;null&gt;,tmpFs=&lt;null&gt;],labels={org.testcontainers=true, org.testcontainers.sessionId=ac11c25f-831d-4f78-8300-70c1a100090b},networkingConfig=&lt;null&gt;,ipv4Address=&lt;null&gt;,ipv6Address=&lt;null&gt;,aliases=&lt;null&gt;,authConfig=AuthConfig[username=srshivamraj,password=testpass,email=&lt;null&gt;,registryAddress=index.docker.io,auth=&lt;null&gt;,registrytoken=&lt;null&gt;],execution=com.github.dockerjava.core.exec.CreateContainerCmdExec@4b856a0c]
+12:27:04.834 [Test worker] INFO docker[postgres:9.6.8] - Starting container with ID: a39fe38eb6c964e310f26c6f86958524cbd3fd929e953222f5355c316f38296f
+12:27:04.836 [Test worker] DEBUG com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: a39fe38eb6c964e310f26c6f86958524cbd3fd929e953222f5355c316f38296f,com.github.dockerjava.core.exec.StartContainerCmdExec@6de23d99
+12:27:06.756 [Test worker] INFO docker[postgres:9.6.8] - Container postgres:9.6.8 is starting: a39fe38eb6c964e310f26c6f86958524cbd3fd929e953222f5355c316f38296f
+12:27:06.757 [Test worker] DEBUG com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: a39fe38eb6c964e310f26c6f86958524cbd3fd929e953222f5355c316f38296f,false,com.github.dockerjava.core.exec.InspectContainerCmdExec@35d30af1
+12:27:06.758 [Test worker] DEBUG com.github.dockerjava.core.exec.InspectContainerCmdExec - GET: OkHttpWebTarget(okHttpClient=org.testcontainers.shaded.okhttp3.OkHttpClient@60efd295, baseUrl=http://docker.socket/, path=[/containers/a39fe38eb6c964e310f26c6f86958524cbd3fd929e953222f5355c316f38296f/json], queryParams={})
+12:27:06.814 [ducttape-0] DEBUG com.github.dockerjava.core.command.AbstrDockerCmd - Cmd: a39fe38eb6c964e310f26c6f86958524cbd3fd929e953222f5355c316f38296f,false,com.github.dockerjava.core.exec.InspectContainerCmdExec@5d28315
+12:27:06.826 [ducttape-0] DEBUG com.github.dockerjava.core.exec.InspectContainerCmdExec - GET: OkHttpWebTarget(okHttpClient=org.testcontainers.shaded.okhttp3.OkHttpClient@60efd295, baseUrl=http://docker.socket/, path=[/containers/a39fe38eb6c964e310f26c6f86958524cbd3fd929e953222f5355c316f38296f/json], queryParams={})
+12:27:06.938 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: This user must also own the server process.
+12:27:06.940 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: selecting dynamic shared memory implementation ... posix
+12:27:06.942 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: selecting default shared_buffers ... 128MB
+12:27:06.942 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: selecting default max_connections ... 100
+12:27:06.943 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: creating subdirectories ... ok
+12:27:06.943 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: fixing permissions on existing directory /var/lib/postgresql/data ... ok
+12:27:06.943 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+12:27:06.946 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: Data page checksums are disabled.
+12:27:06.947 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+12:27:06.947 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: The default text search configuration will be set to &quot;english&quot;.
+12:27:06.948 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: The default database encoding has accordingly been set to &quot;UTF8&quot;.
+12:27:06.948 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: The database cluster will be initialized with locale &quot;en_US.utf8&quot;.
+12:27:06.949 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+12:27:06.950 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: The files belonging to this database system will be owned by user &quot;postgres&quot;.
+12:27:07.752 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: creating configuration files ... ok
+12:27:09.170 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: running bootstrap script ... ok
+12:27:09.906 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: performing post-bootstrap initialization ... ok
+12:27:10.417 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: syncing data to disk ... ok
+12:27:10.418 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: --auth-local and --auth-host, the next time you run initdb.
+12:27:10.418 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: You can change this by editing pg_hba.conf or using the option -A, or
+12:27:10.419 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: WARNING: enabling &quot;trust&quot; authentication for local connections
+12:27:10.420 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: 
+12:27:10.420 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+12:27:10.421 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT:     pg_ctl -D /var/lib/postgresql/data -l logfile start
+12:27:10.422 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+12:27:10.423 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: Success. You can now start the database server using:
+12:27:10.423 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+12:27:10.548 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: waiting for server to start....LOG:  database system was shut down at 2020-02-11 06:57:09 UTC
+12:27:10.560 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: LOG:  MultiXact member wraparound protections are now enabled
+12:27:10.572 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: LOG:  autovacuum launcher started
+12:27:10.572 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: LOG:  database system is ready to accept connections
+12:27:11.461 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT:  done
+12:27:11.463 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: server started
+12:27:11.946 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: CREATE DATABASE
+12:27:11.957 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+12:27:12.050 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: CREATE ROLE
+12:27:12.064 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: waiting for server to shut down....LOG:  aborting any active transactions
+12:27:12.064 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: LOG:  autovacuum launcher shutting down
+12:27:12.065 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: LOG:  received fast shutdown request
+12:27:12.065 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+12:27:12.066 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+12:27:12.067 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+12:27:12.067 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+12:27:12.078 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: LOG:  shutting down
+12:27:12.106 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: LOG:  database system is shut down
+12:27:13.067 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: server stopped
+12:27:13.069 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT:  done
+12:27:13.079 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+12:27:13.080 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: PostgreSQL init process complete; ready for start up.
+12:27:13.081 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDOUT: 
+12:27:13.161 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: LOG:  database system was shut down at 2020-02-11 06:57:12 UTC
+12:27:13.173 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: LOG:  MultiXact member wraparound protections are now enabled
+12:27:13.184 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: LOG:  autovacuum launcher started
+12:27:13.184 [Test worker] DEBUG org.testcontainers.containers.output.WaitingConsumer - STDERR: LOG:  database system is ready to accept connections
+12:27:13.185 [Test worker] INFO docker[postgres:9.6.8] - Container postgres:9.6.8 started
+12:27:13.186 [Test worker] DEBUG docker[postgres:9.6.8] - 
++ Profiler [Container startup]
+|-- elapsed time [Prepare container configuration and host configuration]     4.313 milliseconds.
+|---+ Profiler [Container startup attempt]
+    |-- elapsed time       [Create container]   797.633 milliseconds.
+    |-- elapsed time        [Start container]  1920.429 milliseconds.
+    |-- elapsed time   [Inspecting container]    44.966 milliseconds.
+    |-- elapsed time [Call containerIsStarting on subclasses]     0.020 milliseconds.
+    |-- elapsed time [Wait until container has started properly, or there's evidence it failed to start.]    65.205 milliseconds.
+    |-- elapsed time [Wait until container started properly]  6319.154 milliseconds.
+    |-- Subtotal     [Container startup attempt]  9147.900 milliseconds.
+|-- elapsed time [Container startup attempt]  9147.900 milliseconds.
+|-- Total             [Container startup]  9152.285 milliseconds.
+
+12:27:13.205 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4c97cf4a testClass = PersonControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1ae38f6d testClass = PersonControllerTest, locations = '{}', classes = '{class com.tavisca.testcontainersexample.TestApplication}', contextInitializerClasses = '[class com.tavisca.testcontainersexample.controller.AbstractIntegrationTest$Initializer]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@13ef403d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@672caef7, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@363a2222, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@917d244], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+12:27:13.214 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.tavisca.testcontainersexample.controller.PersonControllerTest]
+12:27:13.216 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.tavisca.testcontainersexample.controller.PersonControllerTest]
+12:27:13.287 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.4.RELEASE)
+
+2020-02-11 12:27:15.639  INFO 13988 --- [    Test worker] c.t.t.controller.PersonControllerTest    : Starting PersonControllerTest on RENTLAPT0012 with PID 13988 (started by sraj in C:\Users\sraj\Desktop\reposetories\POC\poc-with-testcontainers)
+2020-02-11 12:27:15.649  INFO 13988 --- [    Test worker] c.t.t.controller.PersonControllerTest    : No active profile set, falling back to default profiles: default
+2020-02-11 12:27:17.834  INFO 13988 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-11 12:27:18.061  INFO 13988 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 192ms. Found 1 JPA repository interfaces.
+2020-02-11 12:27:19.269  INFO 13988 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-11 12:27:19.777  INFO 13988 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-11 12:27:20.065  INFO 13988 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-11 12:27:23.460  INFO 13988 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
+2020-02-11 12:27:23.502  INFO 13988 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE public.databasechangeloglock (ID INTEGER NOT NULL, LOCKED BOOLEAN NOT NULL, LOCKGRANTED TIMESTAMP WITHOUT TIME ZONE, LOCKEDBY VARCHAR(255), CONSTRAINT DATABASECHANGELOGLOCK_PKEY PRIMARY KEY (ID))
+2020-02-11 12:27:23.529  INFO 13988 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
+2020-02-11 12:27:23.538  INFO 13988 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : DELETE FROM public.databasechangeloglock
+2020-02-11 12:27:23.542  INFO 13988 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangeloglock (ID, LOCKED) VALUES (1, FALSE)
+2020-02-11 12:27:23.552  INFO 13988 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2020-02-11 12:27:23.578  INFO 13988 --- [    Test worker] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2020-02-11 12:27:27.079  INFO 13988 --- [    Test worker] l.c.StandardChangeLogHistoryService      : Creating database history table with name: public.databasechangelog
+2020-02-11 12:27:27.083  INFO 13988 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE public.databasechangelog (ID VARCHAR(255) NOT NULL, AUTHOR VARCHAR(255) NOT NULL, FILENAME VARCHAR(255) NOT NULL, DATEEXECUTED TIMESTAMP WITHOUT TIME ZONE NOT NULL, ORDEREXECUTED INTEGER NOT NULL, EXECTYPE VARCHAR(10) NOT NULL, MD5SUM VARCHAR(35), DESCRIPTION VARCHAR(255), COMMENTS VARCHAR(255), TAG VARCHAR(255), LIQUIBASE VARCHAR(20), CONTEXTS VARCHAR(255), LABELS VARCHAR(255), DEPLOYMENT_ID VARCHAR(10))
+2020-02-11 12:27:27.116  INFO 13988 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangelog
+2020-02-11 12:27:27.122  INFO 13988 --- [    Test worker] l.c.StandardChangeLogHistoryService      : Reading from public.databasechangelog
+2020-02-11 12:27:27.123  INFO 13988 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2020-02-11 12:27:27.134  INFO 13988 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
+2020-02-11 12:27:27.162  INFO 13988 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE public.person (id VARCHAR(255) NOT NULL, name VARCHAR(255), CONSTRAINT PERSON_PKEY PRIMARY KEY (id))
+2020-02-11 12:27:27.227  INFO 13988 --- [    Test worker] liquibase.changelog.ChangeSet            : Table person created
+2020-02-11 12:27:27.235  INFO 13988 --- [    Test worker] liquibase.changelog.ChangeSet            : ChangeSet classpath:/db/changelog/db.changelog-master.yaml::1::sraj ran successfully in 74ms
+2020-02-11 12:27:27.237  INFO 13988 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT MAX(ORDEREXECUTED) FROM public.databasechangelog
+2020-02-11 12:27:27.244  INFO 13988 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('1', 'sraj', 'classpath:/db/changelog/db.changelog-master.yaml', NOW(), 1, '8:b553fe8a068d755cb2354f3bd7741111', 'createTable tableName=person', '', 'EXECUTED', NULL, NULL, '3.8.5', '1404247141')
+2020-02-11 12:27:27.299  INFO 13988 --- [    Test worker] l.lockservice.StandardLockService        : Successfully released change log lock
+2020-02-11 12:27:27.687  INFO 13988 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-11 12:27:27.885  INFO 13988 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2020-02-11 12:27:28.272  INFO 13988 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-11 12:27:28.608  INFO 13988 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-11 12:27:29.292  WARN 13988 --- [    Test worker] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2020-02-11 12:27:30.389  INFO 13988 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-11 12:27:30.396  INFO 13988 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-11 12:27:32.493  WARN 13988 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-11 12:27:33.405  INFO 13988 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-11 12:27:34.855  INFO 13988 --- [    Test worker] c.t.t.controller.PersonControllerTest    : Started PersonControllerTest in 21.517 seconds (JVM running for 42.63)
+2020-02-11 12:27:35.291  INFO 13988 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-02-11 12:27:35.292  INFO 13988 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-02-11 12:27:35.373  INFO 13988 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 80 ms
+com.tavisca.testcontainersexample.model.Person@f8b4ae4com.tavisca.testcontainersexample.model.Person@719c9393
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Feb 11, 2020, 12:27:39 PM</p>
+</div>
+</div>
+</body>
+</html>
